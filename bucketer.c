@@ -30,12 +30,8 @@ int main() {
     int presentCapacityList1[] = {113, 116, 80, 95, 92, 70};
     
     int length1 = sizeof(presentCapacityList1) / sizeof(presentCapacityList1[0]);
-    int length2 = sizeof(presentCapacityList2) / sizeof(presentCapacityList2[0]);
-    int length3 = sizeof(presentCapacityList3) / sizeof(presentCapacityList3[0]);
 
     BatteryClassification result1 = classifyBatteries(presentCapacityList1, length1);
-    BatteryClassification result2 = classifyBatteries(presentCapacityList2, length2);
-    BatteryClassification result3 = classifyBatteries(presentCapacityList3, length3);
 
     printf("Result : Healthy=%d Exchange=%d Failed=%d\n", result1.healthy_count, result1.exchange_count, result1.failed_count);
   
